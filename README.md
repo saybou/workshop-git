@@ -1,18 +1,18 @@
 # workshop-git
 
-Install `jest` and implement a unit test for `greet` function.
+Fix the typo detected by the test without creating a separate commit for the fix.
 
 ```bash
-git checkout step-2
+git checkout step-3
+yarn run test # should fail with a typo in greet function
 
-yarn add --dev jest
-git add package.json yarn.lock
-git commit -m "chore: add jest dependency"
+# fix the typo in src/greet.js
 
-# edit src/__tests__/greet.test.js
+git add src/greet.js
+git commit --fixup=COMMIT_HASH # replace COMMIT_HASH with the hash of the commit that introduced the typo
+git rebase -i --autosquash COMMIT_HASH_PREVIOUS # replace COMMIT_HASH_PREVIOUS with the hash of the commit before the one that introduced the typo
 
-git add src/__tests__/greet.test.js
-git commit -m "test(greet): add unit test for greet"
+yarn run test # should pass
 ```
 
-Go to [step-2](https://github.com/saybou/workshop-git/blob/step-3/README.md)
+Go to [step-4](https://github.com/saybou/workshop-git/blob/step-4/README.md)
