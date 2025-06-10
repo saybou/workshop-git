@@ -1,7 +1,7 @@
 #!/usr/bin/env node
 
 const greet = (name) => {
-  // TODO: implement the greet function
+  return `Hello, ${name}`;
 }
 
 module.exports = { greet };
