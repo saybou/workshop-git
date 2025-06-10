@@ -1,6 +1,6 @@
 #!/usr/bin/env node
 
-const greet = (name) => {
+const greet = (name = 'stranger') => {
   return `Hello, ${name}!`;
 }
 
