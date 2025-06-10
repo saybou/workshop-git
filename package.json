@@ -1,0 +1,13 @@
+{
+  "name": "workshop-git",
+  "version": "1.0.0",
+  "main": "src/greet.js",
+  "scripts": {
+    "test": "jest"
+  },
+  "dependencies": {},
+  "devDependencies": {},
+  "engines": {
+    "node": ">=22"
+  }
+}
