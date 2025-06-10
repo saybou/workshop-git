@@ -1,10 +1,15 @@
 # workshop-git
 
-Check your installation
+Implement `greet` function in `src/greet.js`.
 
 ```bash
-node --version # should be 22.x or higher
+git checkout step-1
 yarn install
+
+# edit src/greet.js
+
+git add src/greet.js
+git commit -m "feat(greet): implement greet function"
 ```
 
-Go to [step-1](https://github.com/saybou/workshop-git/blob/step-1/README.md)
+Go to [step-2](https://github.com/saybou/workshop-git/blob/step-2/README.md)
