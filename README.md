@@ -1,15 +1,18 @@
 # workshop-git
 
-Implement `greet` function in `src/greet.js`.
+Install `jest` and implement a unit test for `greet` function.
 
 ```bash
-git checkout step-1
-yarn install
+git checkout step-2
 
-# edit src/greet.js
+yarn add --dev jest
+git add package.json yarn.lock
+git commit -m "chore: add jest dependency"
 
-git add src/greet.js
-git commit -m "feat(greet): implement greet function"
+# edit src/__tests__/greet.test.js
+
+git add src/__tests__/greet.test.js
+git commit -m "test(greet): add unit test for greet"
 ```
 
-Go to [step-2](https://github.com/saybou/workshop-git/blob/step-2/README.md)
+Go to [step-3](https://github.com/saybou/workshop-git/blob/step-3/README.md)
