@@ -1,7 +1,7 @@
 #!/usr/bin/env node
 
-const greet = (name) => {
-  return `Hello, ${name}`;
+const greet = (name = 'stranger') => {
+  return `Hello, ${name}!`;
 }
 
 module.exports = { greet };
