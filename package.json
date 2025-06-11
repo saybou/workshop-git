@@ -6,7 +6,9 @@
     "test": "jest"
   },
   "dependencies": {},
-  "devDependencies": {},
+  "devDependencies": {
+    "jest": "30.0.0"
+  },
   "engines": {
     "node": ">=22"
   }
